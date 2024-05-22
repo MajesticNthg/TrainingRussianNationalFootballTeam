@@ -5,13 +5,13 @@ public class Level1 {
         int[] copy = F.clone();
         Arrays.sort(copy);
 
+        if (Arrays.equals(F, copy)) return false;
         if (firstTry(F, copy)) return true;
 
         int[] copyReverse = reverse(F);
 
         if (secondTry(F, copyReverse, copy)) return true;
 
-        if (Arrays.equals(F, copy)) return true;
 
         return false;
     }
