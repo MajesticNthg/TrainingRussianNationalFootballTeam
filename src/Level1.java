@@ -11,6 +11,8 @@ public class Level1 {
 
         if (secondTry(F, copyReverse, copy)) return true;
 
+        if (Arrays.equals(F, copy)) return true;
+
         return false;
     }
     public static boolean firstTry (int[] F, int[] copy) {
